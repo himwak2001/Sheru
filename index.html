@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sample Website</title>
+	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>	
+	<!-- HEADER - NAVIGATION BAR -->
+	<header class="header">
+		<div class="logo">
+			<h1>M</h1>
+		</div>
+		<div class="nav-list">
+			<ul>
+				<li>
+					<a href="#">Sample</a>
+				</li>
+				<li>
+					<a href="#">Features</a>
+				</li>
+				<li>
+					<a href="#">Layouts</a>
+				</li>
+				<li>
+					<a href="#">Our Shop</a>
+				</li>
+				<li>
+					<a href="#">Buy Theme</a>
+				</li>
+				<li>
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</li>
+			</ul>
+		</div>
+		<div class="humberger">
+			<i class="fa-solid fa-bars show-nav" id="show-data"></i>
+			<i class="fa-solid fa-xmark hide-nav" id="hide-data"></i>
+		</div>
+	</header>
+
+	<!-- SECTION - HERO SECTION -->
+	<section class="hero-section">
+		<div class="hero-about">
+			<h1>We Crush<br/>minimal<br/>design</h1>
+			<p>MONOCHROME is a creative agency in Chicago. We<br/>developed the Genesis Framework and build mobile-optimized <br/>themes for wordpress.</p>
+		</div>
+	</section>
+
+	<!-- SECTION - EXPERIENCE SECTION -->
+	<section class="exp-section">
+		<div class="exp-heading">
+			<h2>We build Experience.</h2>
+			<p>A minimalist approach is the only way to design a website</p>
+		</div>
+		<div class="line"></div>
+		<div class="exp-cards">
+			<div class="card">
+				<p>DESIGN</p>
+				<p>With an emphasis on typography, white space, and mobile-optimized design, your website will look absolutely breathtaking.</p>
+				<button class="btn">LEARN MORE</button>
+			</div>
+			<div class="card">
+				<p>CONTENT</p>
+				<p>Our team will teach you the art of writing audience-focused content that will help you achieve the success you truly deserve.</p>
+				<button class="btn">LEARN MORE</button>
+			</div>
+			<div class="card">
+				<p>STRATEGY</p>
+				<p>We help creative entrepreneurs build their digital business by focusing on three key elements of a successful online platform.</p>
+				<button class="btn">LEARN MORE</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- SECTION - BRANDS SECTION -->
+	<section class="brands-section">
+		<div class="exp-heading brands">
+			<h2>We design brands</h2>
+			<p>A simple look is all you need to crush your competition</p>
+		</div>
+		<div class="line" style="background-color: white;"></div>
+		<div class="brands-img">
+			<img src="./image/bi1.png">
+			<img src="./image/bi2.png">
+			<img src="./image/bi3.png">
+			<img src="./image/bi4.png">
+			<img src="./image/bi5.png">
+		</div>
+	</section>
+
+	<!-- SECTION - STORIES SECTION -->
+	<section class="stories-section">
+		<div class="exp-heading">
+			<h2>We create stories</h2>
+			<p>A killer narrative will turn your readers into raving fans.</p>
+		</div>
+		<div class="line"></div>
+		<div class="stories-cards">
+			<div class="st-card">
+				<img src="./image/st1.jpg">
+				<h2>OVERCOMING CREATIVE BLOCK</h2>
+				<p>Brian Gardner • May 1, 2017</p>
+			</div>
+
+			<div class="st-card">
+				<img src="./image/st2.jpg">
+				<h2>WHY COMMUNICATION IS KEY</h2>
+				<p>Brian Gardner • May 1, 2017</p>
+			</div>
+
+			<div class="st-card">
+				<img src="./image/st3.jpg">
+				<h2>THE PATH OF LAST RESISTENCE</h2>
+				<p>Brian Gardner • May 1, 2017</p>
+			</div>
+
+			<div class="st-card">
+				<img src="./image/st4.jpg">
+				<h2>HOW TO REACH NEW HEIGHTS</h2>
+				<p>Brian Gardner • May 1, 2017</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- SECTION - SUB FOOTER -->
+	<section class="pre-footer">
+		<h1>
+			Hit the ground running with a minimalist look.
+		</h1>
+		<button class="pre-btn">
+			Learn More
+		</button>
+	</section>
+
+	<!-- SECTION - FOOTER -->
+	<footer class="footer-se">
+		<div class="footer-div">
+			<h1>M</h1>
+			<p>Handcrafted with <i class="fa-solid fa-heart"></i> in Chicago • Powered by StudioPress</p>
+			<p>FACEBOOK -- TWITTER -- INSTAGRAM</p>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+		const menu_slider = document.querySelector(".show-nav");
+		const navbar = document.querySelector(".nav-list");
+		const menu_slider_close = document.querySelector(".hide-nav");
+		menu_slider.addEventListener('click', () => {
+			navbar.style.display = "block";
+			menu_slider_close.style.display = "block";
+			menu_slider.style.display = "none";
+		});
+
+		menu_slider_close.addEventListener('click', () => {
+			navbar.style.display = "none";
+			menu_slider_close.style.display = "none";
+			menu_slider.style.display = "block";
+		});
+	</script>
+
+	<script src="https://kit.fontawesome.com/67fe7e7a7a.js" crossorigin="anonymous"></script>
+</body>	
+</html>

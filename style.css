@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+}
+
+.line{
+	height: 0.15rem;
+	background-color: black;
+	width: 4rem;
+	margin-top: 3rem;
+}
+
+.logo h1{
+	font-size: 3rem;
+	margin-left: 2rem;
+}
+
+.header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem 1.5rem;
+	font-family: 'Tilt Neon', cursive;
+}
+
+.humberger{
+	display: none;
+}
+
+#show-data, #hide-data{
+	display: none;
+}
+
+ul{
+	list-style: none;
+	display: flex;
+	gap: 2rem;
+	font-size: 1.2rem;
+}
+
+ul li a{
+	text-decoration: none;
+	color: black;
+	font-weight: semi-bold;
+}
+
+.hero-section{
+	min-height: 650px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding-left: 10rem;
+	background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(./image/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: 'Mulish', sans-serif;
+}
+
+.hero-about{
+	color: white;
+}
+
+.hero-about h1{
+	font-size: 4rem;
+	margin-bottom: 0.5rem;
+	font-weight: bolder;
+}
+
+.hero-about p{
+	font-size: 1.2rem;
+	line-height: 1.7rem;
+}
+
+.exp-section{
+	min-height: 650px;
+	padding: 10rem;
+	font-family: 'Mulish', sans-serif;
+}
+
+.exp-heading h2{
+	font-size: 3.1rem;
+}
+
+.exp-heading p{
+	font-size: 1.4rem;
+}
+
+.exp-cards{
+	margin-top: 5rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.card{
+	width: 20rem;
+	padding: 1rem;
+	line-height: 1.8rem;
+	box-sizing: border-box;
+	word-spacing: 0.5rem;
+}
+
+.card p{
+	font-size: 1.2rem;
+}
+
+.card p:nth-child(1){
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+}
+
+.card p:nth-child(2){
+	color: #595260;
+}
+
+.btn{
+	margin-top: 2rem;
+	padding: 0.7rem;
+	background-color: black;
+	color: white;
+	border: none;
+	border-radius: 0.2rem;
+}
+
+.brands-section{
+	min-height: 500px;
+	background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(./image/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10rem;
+    font-family: 'Mulish', sans-serif;
+}
+
+.brands{
+	color: white;
+}
+
+.brands-img{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10rem;
+	flex-wrap: wrap;
+}
+
+.brands-img img{
+	height: 2.5rem;
+}
+
+.stories-section{
+	padding: 10rem;
+	min-height: 650px;
+	box-sizing: border-box;
+	font-family: 'Mulish', sans-serif;
+}
+
+.stories-cards{
+	margin-top: 10rem;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.st-card{
+	box-sizing: border-box;
+	width: 33rem;
+	margin: 4rem 0rem;
+	box-sizing: border-box;
+}
+
+.st-card img{
+	width: 33rem;
+	height: 20rem;
+}
+
+.st-card h2{
+	margin-top: 0.5rem;
+}
+
+.st-card p{
+	font-size: 1.2rem;
+	margin-top: 0.5rem;
+}
+
+.pre-footer{
+	min-height: 180px;
+	background: linear-gradient(to right, #045DE9, #09C6F9);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-family: 'Mulish', sans-serif;
+}
+
+.pre-footer h1{
+	font-size: 2rem;
+}
+
+.pre-footer .pre-btn{
+	padding: 0.8rem 1.2rem;
+	margin-left: 1rem;
+	color: white;
+	background-color: transparent;
+	font-size: 1.2rem;
+	border: 2px solid white;
+	border-radius: 0.5rem;
+}
+
+.footer-se{
+	min-height: 300px;
+	background-color: black;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Mulish', sans-serif;
+}
+
+.footer-div{
+	text-align: center;
+}
+
+.footer-div h1{
+	font-size: 4rem;
+}
+
+.footer-div p{
+	font-size: 1.3rem;
+	margin: 0.5rem 0rem;
+}
+
+@media screen and (max-width: 700px){
+	.header{
+		position: sticky;
+		top: 0;
+		padding-left: 0;
+		background-color: white;
+	}
+
+	.nav-list{
+		display: none;
+		position: absolute;
+		top: 4.7rem;
+	}
+
+	ul{
+		flex-direction: column;
+		background-color: white;
+		width: 100vw;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		z-index: 20;
+	}
+
+	.humberger{
+		display: block;
+	}
+
+	#show-data, #hide-data{
+		display: block;
+		font-size: 1.8rem;
+		margin-right: 1rem;
+		padding: 0.5rem 1rem;
+		border: 3px solid black;
+		border-radius: 0.5rem;
+	}
+
+	#hide-data{
+		display: none;
+	}
+
+	.hero-section{
+		padding-left: 5rem;
+	}
+
+	.hero-about h1{
+		font-size: 3.2rem;
+	}
+
+	.hero-about p{
+		font-size: 1rem;
+	}
+
+	.exp-section{
+		padding-left: 5rem;
+	}
+
+	.exp-heading h2{
+		font-size: 3rem;
+	}
+
+	.exp-heading p{
+		font-size: 1.3rem;
+	}
+
+	.exp-cards{
+		justify-content: center;
+	}
+
+	.card{
+		margin-top: 2rem;
+	}
+
+	.brands-section{
+		padding-left: 5rem;
+	}
+
+	.brands-img{
+		flex-direction: column;
+		margin-top: 5rem;
+		gap: 1.5rem;
+	}
+
+	.brands-img img{
+		height: 2.5rem;
+		width: 10rem;
+	}
+
+	.stories-section{
+		padding-left: 5rem;
+		padding-right: 5rem;
+	}
+
+	.stories-cards{
+		justify-content: center;
+	}
+
+	.st-card{
+		width: 25rem;
+	}
+
+	.st-card img{
+		width: 25rem;
+		height: 18rem;
+	}
+
+	.st-card h2{
+		margin-top: 0.5rem;
+	}
+
+	.st-card p{
+		font-size: 1.2rem;
+		margin-top: 0.5rem;
+	}
+
+	.pre-footer{
+		flex-direction: column;
+	}	
+
+	.pre-footer h1{
+		font-size: 1.5rem;
+	}
+
+	.pre-footer .pre-btn{
+		padding: 0.8rem 1.2rem;
+		margin-top: 1rem;
+		font-size: 1rem;
+	}
+}
